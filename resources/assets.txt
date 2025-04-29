@@ -1,0 +1,19 @@
+texture player resources/player.png
+texture hangul resources/hangul.png
+texture ascii resources/ascii.png
+texture panel resources/panel.png
+# Atlas : atlas [atlas name] [texture name] [tile-width] [tile-height]
+atlas player player 64 64
+# Animation : animation [animation name] [atlas name] [start frame] [frame size] [animation duration]
+animation fighter player 0 1 300
+
+# bitmap font : bitmapfont [texture name] [width] pheight]
+bitmapfont hangul 16 16
+bitmapfont ascii 8 16
+
+# Scene 정보도 여기에서 등록해주는 것이 맞을까?
+# scene [scene type] [scene name] [resource path]
+scene scene_shooter shooter resources/map_zelda.txt
+
+# current_scene 현재 Scene 설정
+current_scene shooter
